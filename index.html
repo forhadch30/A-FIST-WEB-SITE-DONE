@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alhamdulillah One web-site</title>
+    <!-- TAILWIND CUSTOM COLOR -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'c-t': '#F8F7F0',
+                        "b-t": '#4BAF47',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- GOOGEL FONT ROBOTO  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
+    <style>
+        .roboto-bold-italic {
+            font-family: 'Roboto';
+        }
+    </style>
+</head>
+<header>
+    <!-- HIDDEN SECTION -->
+    <section class="max-w-7xl mx-auto p-2">
+        <div class="grid grid-cols-1 gap-2 md:flex items-center mt-10 lg:gap-12">
+            <img class="md:w-24 lg:w-36 mx-auto" src="imagess/logo.png" alt="">
+            <!-- ICONS -->
+            <div class="lg:space-x-2 mx-auto lg:mx-0">
+                <a href=""><i class="fa-brands bg-[#F8F7F0] py-2 px-2 rounded-full fa-twitter"></i></a>
+                <a href=""><i class="fa-brands bg-[#F8F7F0] py-2 px-2 rounded-full fa-facebook"></i></a>
+                <a href=""><i class="fa-brands bg-[#F8F7F0] py-2 px-2 rounded-full fa-pinterest"></i></a>
+                <a href=""><i class="fa-brands bg-[#F8F7F0] py-2 px-2 rounded-full fa-instagram"></i></a>
+            </div>
+            <div class="border-e-2 hidden lg:flex lg:px-4">
+                <div class="flex flex-col md:flex-row items-center lg:gap-4">
+                    <img src="imagess/Ico(6).png" alt="">
+                    <div>
+                        <p class="text-[#878680]">Call anytime</p>
+                        <p class="text-sm font-bold">+ 98 (000) - 9630</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-e-2 lg:px-4 hidden lg:flex">
+                <div class="flex flex-col md:flex-row items-center lg:gap-4">
+                    <img src="imagess/Icon (7).png" alt="">
+                    <div>
+                        <p class="text-[#878680]">Send email</p>
+                        <p class="text-sm font-bold">ambed@agrios.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-e-2 lg:px-4">
+                <div class="flex flex-col md:flex-row items-center lg:gap-4">
+                    <img src="imagess/Icon (6).png" alt="">
+                    <div>
+                        <p class="text-[#878680]">Send email</p>
+                        <p class="text-sm font-bold">ambed@agrios.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav class="bg-[#F8F7F0]">
+        <div class="navbar max-w-7xl mx-auto relative">
+            <div class="md:ml-16">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Projects</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="gap-6 menu-horizontal px-1">
+                    <div class="flex gap-2 items-center">
+                        <li><a class="text-sm font-bold">Home</a></li>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <li><a class="hover:text-sm hover:text-black hover:font-bold text-[#878680]">About</a></li>
+                    <div class="flex gap-2 items-center">
+                        <li><a class="hover:text-sm hover:text-black hover:font-bold text-[#878680]">Services</a></li>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <li><a class="hover:text-sm hover:text-black hover:font-bold text-[#878680]">Projects</a></li>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <li><a class="hover:text-sm hover:text-black hover:font-bold text-[#878680]">News</a></li>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <li><a class="hover:text-sm hover:text-black hover:font-bold text-[#878680]">Shop</a></li>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <li><a class="hover:text-sm hover:text-black hover:font-bold text-[#878680]">Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end md:right-2 right-2 gap-2 border-l-2 lg:w-[80px] absolute">
+                <i class="fa-brands fa-searchengin"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- banner section start -->
+    <section>
+        <div class="relative">
+            <img class="h-[500px] lg:w-full lg:h-[550px]" src="imagess/div.elementor-repeater-item-5887cc6.png" alt="">
+            <div class="absolute lg:left-36 left-4 top-20 space-y-4 text-white">
+                <h2>Welcome to agrios farming</h2>
+                <img src="imagess/Agriculture & Eco Farming.png" alt="">
+                <img class="absolute hidden md:flex right-0 top-[32%] w-16" src="imagess/leaf-01.webp.png" alt="">
+                <p class="md:w-[500px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+                    luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <div class="flex gap-2">
+                    <button class="bg-[#4BAF47] py-2 px-6 rounded">Discover More</button>
+                    <img class="w-24" src="imagess/p.png" alt="">
+                </div>
+            </div>
+            <div class="lg:right-36 md:right-4 absolute top-[82%] flex-left-4 md:top-[40%] space-y-2">
+                <img class="w-12" src="imagess/elements (1).png" alt="">
+                <img class="w-12" src="imagess/elements.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Feature 01 -->
+    <section class="max-w-4xl mx-auto absolute lg:top-[100%]  p-2 right-16">
+        <div class="md:flex grid grid-cols-1 lg:gap-10 gap-2">
+            <div class="bg-white shadow-2xl lg:w-[300px] md:w-[200px] w-[300px] h-[200px] text-center rounded-lg">
+                <h2 class="text-[#EEC044] text-2xl font-normal italic">Feature 01</h2>
+                <p class="text-2xl md:w-[200px] font-bold mx-auto">We're using a new technology</p>
+                <img class="mx-auto" src="imagess/container.png" alt="">
+            </div>
+            <div class="bg-white shadow-2xl lg:w-[300px] md:w-[200px] w-[300px] h-[200px] text-center rounded-lg">
+                <h2 class="text-[#EEC044] text-2xl font-normal italic">Feature 02</h2>
+                <p class="text-2xl md:w-[200px] font-bold mx-auto">We're using a new technology</p>
+                <img class="mx-auto" src="imagess/container (1).png" alt="">
+            </div>
+            <div class="bg-white shadow-2xl lg:w-[300px] md:w-[200px] w-[300px] h-[200px] text-center rounded-lg">
+                <h2 class="text-[#EEC044] text-2xl font-normal italic">Feature 03</h2>
+                <p class="text-2xl md:w-[200px] font-bold mx-auto">We're using a new technology</p>
+                <img class="mx-auto" src="imagess/container (2).png" alt="">
+            </div>
+        </div>
+    </section>
+</header>
+<main>
+    <!-- Agriculture & Organic -->
+    <section class="mt-[200%] md:mt-56 max-w-5xl mx-auto p-2">
+        <div class="md:flex grid items-center grid-cols-1 gap-16">
+            <div class="relative">
+                <img class="rounded-full w-[350px]" src="imagess/image-01.webp.png" alt="">
+                <img class="rounded-full w-56 absolute top-48 border-4 border-white" src="imagess/image-02.webp.png"
+                    alt="">
+            </div>
+            <div class="space-y-4 lg:w-[480px] mt-14">
+                <h2 class="italic text-[#EEC044] text-center lg:text-start md:text-start">Our Introductions</h2>
+                <p>Agriculture & Organic Product Farm</p>
+                <p class="text-[#4BAF47] lg:text-xl font-semibold">Agrios is the largest global organic farm.</p>
+                <p class="text-sm text-[#878680]">There are many variations of passages of lorem ipsum available but the
+                    majority have suffered alteration in some form by injected humor or
+                    random word which don’t look even.</p>
+                <div class="flex flex-col gap-4 md:flex-row">
+                    <div class="flex flex-col md:flex-row items-center gap-4">
+                        <img src="imagess/Icon (9).png" alt="">
+                        <div class="font-bold">
+                            <p>Growing fruits</p>
+                            <p>vegetables</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center gap-4">
+                        <img src="imagess/Icon (10).png" alt="">
+                        <div class="font-bold">
+                            <p>Tips for ripening</p>
+                            <p>your fruits</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex  items-center gap-2">
+                        <i class="fa-solid text-[#C5CE38] fa-circle-chevron-down"></i>
+                        <p class="lg:text-sm lg:font-semibold">Lorem Ipsum is not simply random text.</p>
+                    </div>
+                    <div class="flex  items-center gap-2">
+                        <i class="fa-solid text-[#C5CE38] fa-circle-chevron-down"></i>
+                        <p class="lg:text-sm lg:font-semibold">Making this the first true generator on the internet.</p>
+                    </div>
+                </div>
+                <button class="bg-[#4BAF47] text-white rounded py-2 px-6">Discover More</button>
+            </div>
+        </div>
+    </section>
+    <!-- Our Services -->
+    <section class="md:mt-20 mt-5">
+        <div class="bg-[#F8F7F0] text-center py-10 h-[250px]">
+            <h2 class="text-[#EEC044] italic">Our Services</h2>
+            <p class="md:text-5xl text-xl font-bold mb-10">What We Offer</p>
+        </div>
+        <div class="text-center max-w-5xl mx-auto p-2 -mt-28">
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
+                <div class="relative">
+                    <img class="w-full" src="imagess/images (2).png" alt="">
+                    <button
+                        class="bg-[#4BAF47] hidden md:flex text-white top-64 left-28  rounded-xl absolute py-2 px-4">Read
+                        More</button>
+                </div>
+                <div class="relative">
+                    <img class="w-full" src="imagess/images (3).png" alt="">
+                    <button
+                        class="bg-[#4BAF47] hidden md:flex text-white top-64 left-28  rounded-xl absolute py-2 px-4">Read
+                        More</button>
+                </div>
+                <div class="relative">
+                    <img class="w-full" src="imagess/box.png" alt="">
+                    <button
+                        class="bg-[#4BAF47] hidden md:flex text-white top-64 left-28  rounded-xl absolute py-2 px-4">Read
+                        More</button>
+                </div>
+                <div class="relative">
+                    <img class="w-full" src="imagess/re.png" alt="">
+                    <button
+                        class="bg-[#4BAF47] hidden md:flex text-white top-64 left-28  rounded-xl absolute py-2 px-4">Read
+                        More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Agriculture -->
+    <section class="mt-10">
+        <div class="relative">
+            <div
+                class="bg-[#4BAF47] absolute rounded-xl right-64 hidden md:flex flex  lg:gap-20  text-white py-14 px-10">
+                <p>Agriculture Products</p>
+                <p>Projects Completed</p>
+                <p>Satisfied Clients</p>
+                <p>Experts Farmers</p>
+            </div>
+            <img class="h-[400px] lg:h-[500px] w-full" src="imagess/div.elementor-repeater-item-5887cc6.png" alt="">
+            <div class="absolute top-56 left-[13%]">
+                <div class="flex items-center">
+                    <h2 class="text-3xl font-bold w-[220px] text-white">Agriculture Matters to the Future of Development
+                    </h2>
+                </div>
+            </div>
+            <i class="fa-solid absolute right-64 top-[50%] bg-whitem bg-white py-3 px-4 rounded-full fa-play"></i>
+        </div>
+    </section>
+    <!-- Recently Completed -->
+    <section class="max-w-5xl mx-auto mt-10 p-2">
+        <div class="text-center">
+            <h2 class="text-[#EEC044] italic">Recently Completed</h2>
+            <p class="md:text-5xl text-2xl font-bold md:font-semibold">Explore Projects</p>
+            <div class="grid grid-cols-1 gap-3 mt-10 md:grid-cols-2 lg:grid-cols-4">
+                <div>
+                    <img class="lg:w-[300px] w-full h-[400px]" src="imagess/elements (5).png" alt="">
+                </div>
+                <div>
+                    <img class="lg:w-[300px] w-full h-[400px]" src="imagess/elements (4).png" alt="">
+                </div>
+                <div>
+                    <img class="lg:w-[300px] w-full h-[400px]" src="imagess/elements (3).png" alt="">
+                </div>
+                <div>
+                    <img class="lg:w-[300px] w-full h-[400px]" src="imagess/elements (2).png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Testimonials -->
+    <section class="bg-[#F8F7F0] py-10 mt-10 p-2">
+        <div class="flex flex-col md:flex-row items-center justify-between max-w-5xl mx-auto">
+            <div class="w-[300px] space-y-5">
+                <h2 class="text-[#EEC044] italic">Our Testimonials </h2>
+                <div class="flex">
+                    <p class="text-4xl font-bold">What They're Talking About Agrios</p>
+                    <i class="fa-solid  fa-arrow-up-long"></i>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+                <p class="text-sm">There are many variations of passages of available but the majortity have sufferred
+                    alteration in some form by injected humor or random word which don't look even.</p>
+                <button class="bg-teal-700 text-white py-2 px-4 rounded">View All Testimonials</button>
+            </div>
+            <div class="bg-white shadow-2xl py-10 lg:w-[550px] mt-3 md:w-[400px] px-2 rounded">
+                <div class="flex">
+                    <p class="text-[#878680]">There are many variations of passages of available but the majority have
+                        suffered alteration in
+                        some
+                        form by injected humor or random word which don't look even.</p>
+                    <img class="w-24" src="imagess/image.png" alt="">
+                </div>
+                <div class="flex flex-col md:flex-row lg:items-center justify-between">
+                    <p class="text-2xl font-bold">Bonnie Tolbert</p>
+                    <div class="lg:mr-32">
+                        <i class="fa-solid text-[#EEC044] fa-star"></i>
+                        <i class="fa-solid text-[#EEC044] fa-star"></i>
+                        <i class="fa-solid text-[#EEC044] fa-star"></i>
+                        <i class="fa-solid text-[#EEC044] fa-star"></i>
+                        <i class="fa-solid text-[#EEC044] fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Farm Benefits -->
+    <section class="max-w-5xl mx-auto mt-10 p-2">
+        <div class="flex flex-col md:flex-row gap-10 items-center">
+            <div>
+                <img class="w-[450px] h-[630px]" src="imagess/elements (6).png" alt="">
+            </div>
+            <div class="lg:w-[380px] md:w-[300px] space-y-4">
+                <h2 class="text-[#EEC044] italic text-center lg:text-start">Our Farm Benefits</h2>
+                <p class="lg:text-3xl text-xl font-bold">Why Choose Agrios Market</p>
+                <p class="text-[#878680]">There are many variations of passages of available but the majortity have
+                    sufferred alteration in
+                    some
+                    form by injected humor or random word which don't look even.</p>
+                <!-- TEXT GREEN COLOR -->
+                <div>
+                    <div class="flex items-center gap-4">
+                        <i class="fa-solid bg-[#4BAF47] py-2 px-2 rounded-full text-white fa-check"></i>
+                        <div>
+                            <h3 class="text-2xl font-bold">Quality Organic Food</h3>
+                            <p class="text-[#878680]">There are variation You need to be sure there is
+                                anything hidden in the middle of text.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- TEXT PUSH COLOR -->
+                <div>
+                    <div class="flex items-center gap-4">
+                        <i class="fa-solid bg-[#C5CE38] py-2 px-2 rounded-full text-white fa-check"></i>
+                        <div>
+                            <h3 class="text-2xl font-bold">Professional Farmers</h3>
+                            <p class="text-[#878680]">There are variation You need to be sure there is
+                                anything hidden in the middle of text.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- TEXT YELLOW COLOR -->
+                <div>
+                    <div class="flex items-center gap-4">
+                        <i class="fa-solid bg-[#EEC044] py-2 px-2 rounded-full text-white fa-check"></i>
+                        <div>
+                            <h3 class="text-2xl font-bold">Quality Products</h3>
+                            <p class="text-[#878680]">There are variation You need to be sure there is
+                                anything hidden in the middle of text.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="bg-[#4BAF47] py-2 px-4 text-white rounded">Discover More</button>
+            </div>
+        </div>
+    </section>
+    <!-- IMAGESS SECTION END -->
+    <section class="max-w-5xl mx-auto text-center mt-10">
+        <h2 class="text-[#EEC044] italic mb-2">From the Blog</h2>
+        <p class="text-3xl font-bold mb-2">News & Articles</p>
+        <div class="grid grid-cols-1 gap-5 p-2 md:grid-cols-2 lg:grid-cols-3">
+            <div>
+                <img class="lg:duration-500 lg:hover:scale-105" src="imagess/div.master-news.png" alt="">
+            </div>
+            <div>
+                <img class="duration-500 h-full hover:scale-105" src="imagess/div.master-news (1).png" alt="">
+            </div>
+            <div>
+                <img class="lg:duration-500 lg:hover:scale-105" src="imagess/div.master-news (2).png" alt="">
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="bg-[#24231D] text-white">
+    <div class=" max-w-5xl mx-auto mt-14 p-5 lg:p-10 grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-4 ">
+        <div>
+            <img src="imagess/Link - logo → logo@2x-white-1.webp.png" alt="">
+            <p class="mt-4 text-[#A5A49A]">There are many variations of passages
+                of lorem ipsum available, but the
+                majority suffered.</p>
+            <div class="space-x-2">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        <div>
+            <p class="text-xl font-bold border-b-2 w-10 border-[#4BAF47] py-2">Explore</p>
+            <div class="flex gap-3 mt-4 items-center">
+                <img src="imagess/pa (6).png" alt="">
+                <a class="text-[#A5A49A] hover:underline">About</a>
+            </div>
+            <div class="flex gap-3 items-center">
+                <img src="imagess/pa (6).png" alt="">
+                <a class="text-[#A5A49A]">Services</a>
+            </div>
+            <div class="flex gap-3 items-center">
+                <img src="imagess/pa (6).png" alt="">
+                <a class="text-[#A5A49A] hover:underline">Our Projects</a>
+            </div>
+            <div class="flex gap-3 items-center">
+                <img src="imagess/pa (6).png" alt="">
+                <a class="text-[#A5A49A] hover:underline">Meet the Farmers</a>
+            </div>
+            <div class="flex gap-3 items-center">
+                <img src="imagess/pa (6).png" alt="">
+                <a class="text-[#A5A49A] hover:underline">Latest News</a>
+            </div>
+            <div class="flex gap-3 items-center">
+                <img src="imagess/pa (6).png" alt="">
+                <a class="text-[#A5A49A] hover:underline">Contact</a>
+            </div>
+        </div>
+        <div>
+            <h2 class="text-xl font-bold border-b-2 w-10 border-[#4BAF47] py-2">News</h2>
+            <p class="mt-4">Bringing Food Production Back To Cities</p>
+            <p class="text-[#EEC044]">July 5, 2022</p>
+            <p class="mt-5">The Future of Farming, Smart Irrigation Solutions</p>
+            <p class="text-[#EEC044]">July 5, 2022</p>
+        </div>
+        <div class="space-y-3">
+            <h3 class="text-xl font-bold border-b-2 w-10 border-[#4BAF47] py-2">Contact</h3>
+            <div class="flex gap-2 items-center">
+                <i class="fa-solid text-[#EEC044] fa-phone"></i>
+                <p class="text-[#A5A49A]">666 888 0000</p>
+            </div>
+            <div class="flex gap-2 items-center">
+                <i class="fa-solid text-[#EEC044] fa-envelope"></i>
+                <p class="text-[#A5A49A]">needhelp@company.com</p>
+            </div>
+            <div class="flex gap-2 items-center">
+                <i class="fa-solid text-[#EEC044] fa-location-crosshairs"></i>
+                <p class="text-[#A5A49A]">80 broklyn golden street line New York, USA</p>
+            </div>
+            <input type="email" placeholder="Your Email Address" name="forhad" class="py-2 bg-white rounded-l px-2"
+                id="">
+            <i class="fa-solid text-white bg-[#4BAF47] absolute py-3 px-3 rounded-e fa-location-arrow"></i>
+        </div>
+    </div>
+    <div class="bg-[#1F1E17]">
+        <div class="flex flex-col md:flex-row gap-2 p-2 justify-between max-w-5xl mx-auto mt-10 py-4">
+            <p class="text-[#A5A49A]">© All Copyright 2024 by shawonetc Themes</p>
+            <div class="flex gap-2 ">
+                <p class="text-[#A5A49A] border-e-2 border-[#A5A49A] px-2">Terms of Use</p>
+                <p class="text-[#A5A49A]">Privacy Policy</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<body>
+
+</body>
+
+</html>
